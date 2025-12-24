@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    align-items: center;
+    background-color: var(--color2);
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--color4);
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    font-size: var(--fontSize5);
+    color: var(--gray9);
+    padding: 0.5rem;
+    outline: none;
+}
+
+.input::placeholder {
+    color: var(--gray6);
+}
+
+.sendBtn {
+    background-color: var(--color7);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s;
+    flex-shrink: 0;
+}
+
+.sendBtn:hover:not(:disabled) {
+    background-color: var(--color8);
+}
+
+.sendBtn:disabled {
+    background-color: var(--gray4);
+    cursor: not-allowed;
+}

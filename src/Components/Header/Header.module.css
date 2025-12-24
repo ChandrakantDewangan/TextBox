@@ -1,0 +1,73 @@
+.header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    background-color: var(--gray1);
+    border-bottom: 1px solid var(--gray3);
+    width: 100%;
+}
+
+.logoSection {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--color10);
+}
+
+.companyIcon {
+    font-size: 1.5rem;
+    color: var(--color7);
+}
+
+.userSection {
+    position: relative;
+}
+
+.userAvatar {
+    font-size: 2rem;
+    color: var(--gray6);
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.userAvatar:hover {
+    color: var(--color7);
+}
+
+.dropdown {
+    position: absolute;
+    top: 120%;
+    right: 0;
+    background-color: white;
+    border: 1px solid var(--gray3);
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 180px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.dropdownItem {
+    padding: 0.8rem 1rem;
+    font-size: var(--fontSize4);
+    color: var(--gray8);
+    cursor: pointer;
+    transition: background 0.1s;
+}
+
+.dropdownItem:hover {
+    background-color: var(--color2);
+    color: var(--color8);
+}
+
+.dropdownDivider {
+    height: 1px;
+    background-color: var(--gray2);
+    margin: 0;
+}

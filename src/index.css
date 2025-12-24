@@ -1,0 +1,94 @@
+:root {
+  /* Colors */
+  --color1: #f5f5f5;
+  --color2: #e6f7ff;
+  --color3: #9dd4f5;
+  --color4: #6fb8e8;
+  --color5: #469bdb;
+  --color6: #217ecf;
+  --color7: #0063c3;
+  --color8: #0958d9;
+  --color9: #00499c;
+  --color10: #003eb3;
+  --color11: #003375;
+  --color12: #00204f;
+  --color13: #000f29;
+
+  /* Grays */
+  --gray1: #f5f5f5;
+  --gray2: #e8e8e8;
+  --gray3: #d9d9d9;
+  --gray4: #bfbfbf;
+  --gray5: #ababab;
+  --gray6: #8c8c8c;
+  --gray7: #737373;
+  --gray8: #595959;
+  --gray9: #404040;
+  --gray10: #262626;
+
+  /* Font Sizes */
+  --fontSize1: 0.2rem;
+  --fontSize2: 0.4rem;
+  --fontSize3: 0.6rem;
+  --fontSize4: 0.8rem;
+  --fontSize5: 1rem;
+  --fontSize6: 1.2rem;
+  --fontSize7: 1.4rem;
+  --fontSize8: 1.6rem;
+  --fontSize9: 1.8rem;
+  --fontSize10: 2rem;
+  --fontSize11: 3rem;
+  --fontSize12: 4rem;
+  --fontSize13: 5rem;
+  --fontSize14: 6rem;
+  --fontSize15: 7rem;
+  --fontSize16: 8rem;
+  --fontSize17: 9rem;
+
+  /* Spacing */
+  --pad: 1rem;
+  
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: var(--gray1);
+  color: var(--gray10);
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+}
