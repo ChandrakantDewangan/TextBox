@@ -1,25 +1,20 @@
 import React from "react";
-import styles from "./Message.module.css";
-import { FaUser, FaRobot } from "react-icons/fa";
+import Message1 from "./Message1/Message1";
+import Message2 from "./Message2/Message2";
+
+type MessageVariant = "standard" | "minimal";
 
 interface MessageProps {
     role: "user" | "ai";
     content: string;
+    variant?: MessageVariant;
 }
 
-const Message: React.FC<MessageProps> = ({ role, content }) => {
-    const isUser = role === "user";
-
-    return (
-        <div className={`${styles.message} ${isUser ? styles.userMessage : styles.aiMessage}`}>
-            <div className={styles.avatar}>
-                {isUser ? <FaUser /> : <FaRobot />}
-            </div>
-            <div className={styles.bubble}>
-                {content}
-            </div>
-        </div>
-    );
+const Message: React.FC<MessageProps> = ({ role, content, variant = "standard" }) => {
+    if (variant === "minimal") {
+        return <Message2 role={role} content={content} />;
+    }
+    return <Message1 role={role} content={content} />;
 };
 
 export default Message;

@@ -1,0 +1,46 @@
+.header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    background: linear-gradient(90deg, var(--color13), var(--color12));
+    border-bottom: 1px solid var(--color10);
+    width: 100%;
+}
+
+.logoSection {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.companyIcon {
+    font-size: 1.8rem;
+    color: var(--color4);
+    animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.userIcon {
+    font-size: 1.5rem;
+    color: var(--color4);
+    cursor: pointer;
+}
+
+.emptySpacer {
+    width: 24px;
+}

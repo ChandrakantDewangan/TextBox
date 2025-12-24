@@ -1,36 +1,20 @@
-import React, { useState } from "react";
-import styles from "./Header.module.css";
-import { FaUserCircle, FaBuilding } from "react-icons/fa";
+import React from "react";
+import Header1 from "./Header1/Header1";
+import Header2 from "./Header2/Header2";
 
-const Header: React.FC = () => {
-    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+type HeaderVariant = "standard" | "nexus";
 
-    return (
-        <div className={styles.header}>
-            <div className={styles.logoSection}>
-                <FaBuilding className={styles.companyIcon} />
-                <span className={styles.companyName}>BrandAI</span>
-            </div>
+interface HeaderProps {
+    variant?: HeaderVariant;
+}
 
-            <div className={styles.userSection}>
-                <div
-                    className={styles.userAvatar}
-                    onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                >
-                    <FaUserCircle />
-                </div>
+const Header: React.FC<HeaderProps> = ({ variant = "standard" }) => {
+    // Variant 2 logic
+    if (variant === "nexus") {
+        return <Header2 />;
+    }
 
-                {isDropdownOpen && (
-                    <div className={styles.dropdown}>
-                        <div className={styles.dropdownItem}>Profile</div>
-                        <div className={styles.dropdownItem}>Admin Settings</div>
-                        <div className={styles.dropdownDivider} />
-                        <div className={styles.dropdownItem}>Logout</div>
-                    </div>
-                )}
-            </div>
-        </div>
-    );
+    return <Header1 />;
 };
 
 export default Header;

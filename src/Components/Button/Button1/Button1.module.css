@@ -1,0 +1,20 @@
+.btnSolid {
+    background-color: var(--color7);
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+    font-size: var(--fontSize5);
+}
+
+.btnSolid:hover {
+    background-color: var(--color8);
+}
+
+.btnSolid:disabled {
+    background-color: var(--gray4);
+    cursor: not-allowed;
+}

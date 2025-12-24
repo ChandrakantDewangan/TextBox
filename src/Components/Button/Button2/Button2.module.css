@@ -1,0 +1,23 @@
+.btnOutline {
+    background-color: transparent;
+    color: var(--color7);
+    border: 1px solid var(--color7);
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s;
+    font-size: var(--fontSize5);
+}
+
+.btnOutline:hover {
+    background-color: var(--color2);
+    border-color: var(--color8);
+    color: var(--color8);
+}
+
+.btnOutline:disabled {
+    border-color: var(--gray4);
+    color: var(--gray4);
+    cursor: not-allowed;
+}

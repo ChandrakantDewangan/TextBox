@@ -1,0 +1,62 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.floatWrapper {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--gray3);
+    border-radius: 16px;
+    padding: 0.6rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    width: 600px;
+    gap: 0.5rem;
+}
+
+.attachBtn {
+    color: var(--gray6);
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.attachBtn:hover {
+    color: var(--color7);
+}
+
+.input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    font-size: var(--fontSize5);
+    outline: none;
+    color: var(--gray9);
+}
+
+.sendBtn {
+    background-color: var(--color11);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.sendBtn:hover:not(:disabled) {
+    transform: scale(1.05);
+}
+
+.sendBtn:disabled {
+    opacity: 0.5;
+    cursor: default;
+}

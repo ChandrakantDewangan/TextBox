@@ -1,0 +1,25 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    width: 100%;
+    padding: 0.5rem;
+    border-left: 2px solid var(--gray3);
+    padding-left: 1rem;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--gray6);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.content {
+    color: var(--gray10);
+    font-size: var(--fontSize5);
+    line-height: 1.5;
+}
